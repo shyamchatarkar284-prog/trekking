@@ -13,6 +13,7 @@ app.use("/api/auth", require("./routes/auth.routes"))
 
 app.listen(process.env.PORT, () => {
     console.log(`node : ${config.ENV}`)
+    console.log(`CORS : ${config.CORS_ORIGIN}`)
     console.log(`server running on http://localhost:${process.env.PORT}`)
 })
 
